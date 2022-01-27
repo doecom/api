@@ -1,0 +1,65 @@
+{
+  "default": {
+    "title": "Activating your account",
+    "preheader": "📨 ✔️ - Hey {{name}}, let's activate your account!",
+    "presentation": "Hey, <b>{{name}}</b>!",
+    "preButtonPars": [
+      "As you've requested, here is another email for confirming your account.",
+      "Please, click in the button below to proceed."
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verify Account",
+    "postButtonPars": [
+      "If it does not work as expected, contact us by replying to this email."
+    ],
+    "thanks": "Thanks!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- All rights reserved."
+  },
+  "pt-BR": {
+    "title": "Ativando sua conta",
+    "preheader": "📨 ✔️ - Olá {{name}}, vamos ativar sua conta!",
+    "presentation": "Olá, <b>{{name}}</b>!",
+    "preButtonPars": [
+      "Como você pediu, aqui está outro e-mail para confirmar sua conta.",
+      "Por favor, clique no botão abaixo para continuar"
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verificar Conta",
+    "postButtonPars": [
+      "Se não funcionar conforme o esperado, entre em contato conosco, respondendo a este e-mail."
+    ],
+    "thanks": "Obrigado!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- All rights reserved."
+  },
+  "en-US": {
+    "title": "Activating your account",
+    "preheader": "📨 ✔️ - Hey {{name}}, let's activate your account!",
+    "presentation": "Hey, <b>{{name}}</b>!",
+    "preButtonPars": [
+      "As you've requested, here is another email for confirming your account.",
+      "Please, click in the button below to proceed."
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verify Account",
+    "postButtonPars": [
+      "If it does not work as expected, contact us by replying to this email."
+    ],
+    "thanks": "Thanks!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- All rights reserved."
+  }
+}

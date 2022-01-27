@@ -1,0 +1,1858 @@
+{
+	"info": {
+		"_postman_id": "08929e6a-9205-4627-a9ae-c4abfd15b8ce",
+		"name": "doecom-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6InByb2ZpbGUiLCJpYXQiOjE1ODY1NDc2OTEsImV4cCI6MTU4OTEzOTY5MSwic3ViIjoiNWU5MGM1N2JiN2VkYWE3OTM1NDcwZjEzIn0.jm_9vGjV6jHmiV7tpICrEbAvHaIQdz-aRegL0cTw214",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"password\": \"StrongP4ss!2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/account",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "info",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/account",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"account"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "343"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"157-NZMA/XUliKl6mnhoHT/ppynn5Fg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jul 2020 21:04:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5f0f43d1d6f93934b361bb15\",\n    \"picture\": \"\",\n    \"verified\": false,\n    \"lastLogin\": \"2020-07-15T21:04:18.754Z\",\n    \"loginCount\": 1,\n    \"roles\": [\n        \"profile\"\n    ],\n    \"language\": \"default\",\n    \"active\": true,\n    \"name\": \"Italo Sousa\",\n    \"email\": \"italo.andrade@pitang.com\",\n    \"phoneNumber\": \"\",\n    \"createdAt\": \"2020-07-15T17:58:41.349Z\",\n    \"updatedAt\": \"2020-07-15T21:04:18.756Z\",\n    \"__v\": 0,\n    \"pages\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "sessions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/account/sessions",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"sessions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "sessions",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/account/sessions",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"account",
+										"sessions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "409"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"199-u3ySFsxfQVJymwNh6J4c79mqmGQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jul 2020 21:05:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"5f0f6f527137e64db84b9c44\",\n        \"tokenType\": \"Bearer\",\n        \"user\": \"5f0f43d1d6f93934b361bb15\",\n        \"userAgent\": {\n            \"platform\": null,\n            \"os\": null,\n            \"browser\": \"PostmanRuntime\",\n            \"browserVersion\": \"7.26.1\",\n            \"raw\": \"PostmanRuntime/7.26.1\"\n        },\n        \"location\": {\n            \"city\": null,\n            \"region\": null,\n            \"country\": null,\n            \"ip\": \"::1\"\n        },\n        \"active\": true,\n        \"success\": true,\n        \"createdAt\": \"2020-07-15T21:04:18.905Z\",\n        \"updatedAt\": \"2020-07-15T21:04:18.905Z\",\n        \"__v\": 0,\n        \"current\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Italo Sousa\",\n    \"email\": \"italo.sousa@ufrpe.br\",\n    \"password\": \"StrongP4ss!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/register",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"italusousa@gmail.com\",\n    \"password\": \"StrongP4ss!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/login",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"italusousa@gmail.com\",\n    \"password\": \"StrongP4ss!\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/account/login",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "310"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"136-3G9iibfV4fytHEXb+PquzmHaDsw\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jul 2020 02:31:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": \"5efd44f62608ee4f5c2fda92\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6InByb2ZpbGUiLCJpYXQiOjE1OTM2NTcwOTcsImV4cCI6MTU5NjI0OTA5Nywic3ViIjoiNWVmZDQ0ZjYyNjA4ZWU0ZjVjMmZkYTkyIn0.QEAIgKBsZxOj_u0gwf771O9lWnFMGzLhI8Ccefu5oQY\",\n    \"expiresIn\": 1596249097,\n    \"tokenType\": \"Bearer\",\n    \"roles\": \"profile\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/account/logout",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/account/logout",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"account",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10-/VnJyQBB0+b7i4NY83P42KKVWsM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 15 Jul 2020 21:05:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"ok\"\n}"
+						}
+					]
+				},
+				{
+					"name": "verifyAccount",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNWU5MGM1N2JiN2VkYWE3OTM1NDcwZjEzIiwiaWF0IjoxNTg2NTQ2MDQzLCJleHAiOjE1ODY2MzI0NDN9.8O-DtSD3XZdKoMgtQ3muVc0RsFskloQJ2jaHQRidd7k\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/verify",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyAccountRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/account/verify/request",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"verify",
+								"request"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "VerifyAccountRequest",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/account/verify/request",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"account",
+										"verify",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10-/VnJyQBB0+b7i4NY83P42KKVWsM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 20 Jul 2020 11:08:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"ok\"\n}"
+						}
+					]
+				},
+				{
+					"name": "resetPasswordRequest",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"italusousa@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/reset-password/request",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"reset-password",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNWU5MGM1N2JiN2VkYWE3OTM1NDcwZjEzIiwiaWF0IjoxNTg2NTUwMDEzLCJleHAiOjE1ODY1NTM2MTN9.K_wDb3YkK61wsAIIHnlGn42aUQqqWibTseBMoaliJXo\",\n\t\"password\": \"StrongP4ss!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/reset-password",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "terminateSessions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sessions\": [\n\t\t\"5f0f6f527137e64db84b9c44\"\n\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/account/sessions/terminate",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"account",
+								"sessions",
+								"terminate"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pages",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/pages",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/pages",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "306"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"132-uL77hl1+RPACIFiJ6nQe08fm408\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jul 2020 19:17:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"links\": [],\n    \"active\": true,\n    \"_id\": \"5efe32cf62d4873e15112dbe\",\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo\",\n    \"theme\": {\n        \"colors\": [\n            \"#EECDA3\",\n            \"#EF629F\"\n        ],\n        \"_id\": \"5efe1d197c213e1ed428e6ff\",\n        \"code\": \"DEFAULT\",\n        \"name\": \"Default\",\n        \"mode\": \"LIGHT\"\n    },\n    \"createdAt\": \"2020-07-02T19:17:35.722Z\",\n    \"updatedAt\": \"2020-07-02T19:17:35.722Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "getById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5efe32cf62d4873e15112dbe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5efe32cf62d4873e15112dbe"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e5-q62e2wkjCt6ln69SIAxr4eMFj/E\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jul 2020 20:42:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5efe32cf62d4873e15112dbe\",\n    \"links\": [],\n    \"active\": true,\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo Atualizada\",\n    \"theme\": \"5efe1d197c213e1ed428e6ff\",\n    \"createdAt\": \"2020-07-02T19:17:35.722Z\",\n    \"updatedAt\": \"2020-07-02T19:59:02.832Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo Atualizada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5efe32cf62d4873e15112dbe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo Atualizada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5efe32cf62d4873e15112dbe"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e5-DKfSDUo343PiNd2YJzf4RZg39Uk\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jul 2020 20:44:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5efe32cf62d4873e15112dbe\",\n    \"links\": [],\n    \"active\": true,\n    \"name\": \"italo\",\n    \"title\": \"Pagina Italo Atualizada\",\n    \"theme\": \"5efe1d197c213e1ed428e6ff\",\n    \"createdAt\": \"2020-07-02T19:17:35.722Z\",\n    \"updatedAt\": \"2020-07-02T20:44:47.922Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "createLink",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Link de Mover\",\n    \"subtitle\": \"meu link\",\n    \"url\": \"https://google.com\",\n    \"type\": \"SIMPLE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5f0514f7e6ede162e806064b/links",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5f0514f7e6ede162e806064b",
+								"links"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createLink",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Link de Mover\",\n    \"subtitle\": \"meu link\",\n    \"url\": \"https://google.com\",\n    \"type\": \"SIMPLE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5f0514f7e6ede162e806064b/links",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5f0514f7e6ede162e806064b",
+										"links"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "309"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"135-DZJvPk1vbMIQSTdwjoSUc9yWIEA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jul 2020 02:11:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"subtitle\": \"meu link\",\n    \"image\": \"\",\n    \"icon\": \"\",\n    \"type\": \"SIMPLE\",\n    \"position\": 0,\n    \"active\": true,\n    \"_id\": \"5f07ce4b685e5244367cd277\",\n    \"title\": \"Link de Mover\",\n    \"url\": \"https://google.com\",\n    \"page\": \"5f0514f7e6ede162e806064b\",\n    \"linkId\": \"rv6qwz\",\n    \"createdAt\": \"2020-07-10T02:11:23.933Z\",\n    \"updatedAt\": \"2020-07-10T02:11:23.933Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "updateLink",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"LinkAtualizado\",\n    \"subtitle\": \"meu link\",\n    \"url\": \"https://google.com\",\n    \"type\": \"SIMPLE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5f05171df93b1364cc158d35/links/5f05171df93b1364cc158d35",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5f05171df93b1364cc158d35",
+								"links",
+								"5f05171df93b1364cc158d35"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateLink",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"LinkAtualizado\",\n    \"subtitle\": \"meu link\",\n    \"url\": \"https://google.com\",\n    \"type\": \"SIMPLE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5f05171df93b1364cc158d35/links/5f05171df93b1364cc158d35",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5f05171df93b1364cc158d35",
+										"links",
+										"5f05171df93b1364cc158d35"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "310"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"136-bAPioZeACM4iAyQIwt2NdAGgw3I\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jul 2020 02:16:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5f05171df93b1364cc158d35\",\n    \"subtitle\": \"meu link\",\n    \"image\": \"\",\n    \"icon\": \"\",\n    \"type\": \"SIMPLE\",\n    \"active\": true,\n    \"title\": \"LinkAtualizado\",\n    \"url\": \"https://google.com\",\n    \"position\": 2,\n    \"page\": \"5f0514f7e6ede162e806064b\",\n    \"linkId\": \"Tz8dnr\",\n    \"createdAt\": \"2020-07-08T00:45:17.777Z\",\n    \"updatedAt\": \"2020-07-10T02:16:05.629Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "updateLinkPosition",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"LinkAtualizado\",\n    \"subtitle\": \"meu link\",\n    \"url\": \"https://google.com\",\n    \"type\": \"SIMPLE\",\n    \"position\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe/links/5efe32cf62d4873e15112dbe",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5efe32cf62d4873e15112dbe",
+								"links",
+								"5efe32cf62d4873e15112dbe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateLinkPosition",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"position\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5f0514f7e6ede162e806064b/links/5f07cb5586d04d3de9065afb/position",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5f0514f7e6ede162e806064b",
+										"links",
+										"5f07cb5586d04d3de9065afb",
+										"position"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10-/VnJyQBB0+b7i4NY83P42KKVWsM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jul 2020 02:10:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"ok\"\n}"
+						}
+					]
+				},
+				{
+					"name": "removeLink",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5f0514f7e6ede162e806064b/links/5f05195e632ad66a3300bbac",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5f0514f7e6ede162e806064b",
+								"links",
+								"5f05195e632ad66a3300bbac"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "removeLink",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/pages/5f0514f7e6ede162e806064b/links/5f05195e632ad66a3300bbac",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"pages",
+										"5f0514f7e6ede162e806064b",
+										"links",
+										"5f05195e632ad66a3300bbac"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "302"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12e-rxYLRJgJZg0j9lQSJQF+yKAyKJU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jul 2020 02:15:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5f05195e632ad66a3300bbac\",\n    \"subtitle\": \"meu link\",\n    \"image\": \"\",\n    \"icon\": \"\",\n    \"type\": \"SIMPLE\",\n    \"active\": false,\n    \"title\": \"LinkF\",\n    \"url\": \"https://google.com\",\n    \"position\": 3,\n    \"page\": \"5f0514f7e6ede162e806064b\",\n    \"linkId\": \"60fbyl\",\n    \"createdAt\": \"2020-07-08T00:54:54.602Z\",\n    \"updatedAt\": \"2020-07-10T02:15:23.529Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "dashboard",
+			"item": [
+				{
+					"name": "getPage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/pages/5efe32cf62d4873e15112dbe",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"pages",
+								"5efe32cf62d4873e15112dbe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getPage",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/dashboard/5f0514f7e6ede162e806064b",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"dashboard",
+										"5f0514f7e6ede162e806064b"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1945"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"799-WeYOU+XkPvLLmAS/lU7Uo+YzXUU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jul 2020 02:45:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5f0514f7e6ede162e806064b\",\n    \"links\": [\n        {\n            \"_id\": \"5f05171df93b1364cc158d35\",\n            \"subtitle\": \"meu link\",\n            \"image\": \"\",\n            \"icon\": \"\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkA\",\n            \"url\": \"https://google.com\",\n            \"position\": 0,\n            \"page\": \"5f0514f7e6ede162e806064b\",\n            \"linkId\": \"Tz8dnr\",\n            \"createdAt\": \"2020-07-08T00:45:17.777Z\",\n            \"updatedAt\": \"2020-07-08T00:45:17.777Z\",\n            \"__v\": 0,\n            \"analytics\": {\n                \"visitors\": 0\n            }\n        },\n        {\n            \"_id\": \"5f0517e61924b5671e3ade97\",\n            \"subtitle\": \"meu link\",\n            \"image\": \"\",\n            \"icon\": \"\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkC\",\n            \"url\": \"https://google.com\",\n            \"position\": 0,\n            \"page\": \"5f0514f7e6ede162e806064b\",\n            \"linkId\": \"E8DW1N\",\n            \"createdAt\": \"2020-07-08T00:48:38.242Z\",\n            \"updatedAt\": \"2020-07-08T00:48:38.242Z\",\n            \"__v\": 0,\n            \"analytics\": {\n                \"visitors\": 0\n            }\n        },\n        {\n            \"_id\": \"5f051906f65701699ced6142\",\n            \"subtitle\": \"meu link\",\n            \"image\": \"\",\n            \"icon\": \"\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkD\",\n            \"url\": \"https://google.com\",\n            \"position\": 0,\n            \"page\": \"5f0514f7e6ede162e806064b\",\n            \"linkId\": \"9dNiBb\",\n            \"createdAt\": \"2020-07-08T00:53:26.955Z\",\n            \"updatedAt\": \"2020-07-08T00:53:26.955Z\",\n            \"__v\": 0,\n            \"analytics\": {\n                \"visitors\": 0\n            }\n        },\n        {\n            \"_id\": \"5f051930f65701699ced6143\",\n            \"subtitle\": \"meu link\",\n            \"image\": \"\",\n            \"icon\": \"\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkE\",\n            \"url\": \"https://google.com\",\n            \"position\": 0,\n            \"page\": \"5f0514f7e6ede162e806064b\",\n            \"linkId\": \"rKFTnT\",\n            \"createdAt\": \"2020-07-08T00:54:08.025Z\",\n            \"updatedAt\": \"2020-07-08T00:54:08.025Z\",\n            \"__v\": 0,\n            \"analytics\": {\n                \"visitors\": 0\n            }\n        },\n        {\n            \"_id\": \"5f05195e632ad66a3300bbac\",\n            \"subtitle\": \"meu link\",\n            \"image\": \"\",\n            \"icon\": \"\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkF\",\n            \"url\": \"https://google.com\",\n            \"position\": 0,\n            \"page\": \"5f0514f7e6ede162e806064b\",\n            \"linkId\": \"60fbyl\",\n            \"createdAt\": \"2020-07-08T00:54:54.602Z\",\n            \"updatedAt\": \"2020-07-08T00:54:54.602Z\",\n            \"__v\": 0,\n            \"analytics\": {\n                \"visitors\": 0\n            }\n        }\n    ],\n    \"active\": true,\n    \"name\": \"italo3\",\n    \"title\": \"Pagina Italo 3\",\n    \"user\": \"5efd44f62608ee4f5c2fda92\",\n    \"theme\": \"5efe1d197c213e1ed428e6ff\",\n    \"createdAt\": \"2020-07-08T00:36:07.244Z\",\n    \"updatedAt\": \"2020-07-08T00:54:54.724Z\",\n    \"__v\": 0,\n    \"analytics\": {\n        \"visitors\": 0,\n        \"clicks\": 0,\n        \"ctr\": 0\n    }\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "themes",
+			"item": [
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/themes",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"themes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/themes",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"themes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "124"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7c-v571FcVgQLmIaOi5JoAVo8lWXCA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 13 Jul 2020 22:05:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"colors\": [\n            \"#EECDA3\",\n            \"#EF629F\"\n        ],\n        \"_id\": \"5efe1d197c213e1ed428e6ff\",\n        \"code\": \"DEFAULT\",\n        \"name\": \"Default\",\n        \"mode\": \"LIGHT\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"colors\": [\n        \"#EECDA3\",\n        \"#EF629F\"\n    ],\n    \"_id\": \"5efe1d197c213e1ed428e6ff\",\n    \"code\": \"DEFAULT\",\n    \"name\": \"Default\",\n    \"mode\": \"LIGHT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/themes",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"themes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"colors\": [\n        \"#EECDA3\",\n        \"#EF629F\"\n    ],\n    \"_id\": \"5efe1d197c213e1ed428e6ff\",\n    \"code\": \"DEFAULT\",\n    \"name\": \"Default\",\n    \"mode\": \"LIGHT\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/themes",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"themes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-CntUaSAHILmoYXhbVwFJdZlrY/U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 13 Jul 2020 22:05:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"colors\": [\n        \"#EECDA3\",\n        \"#EF629F\"\n    ],\n    \"_id\": \"5efe1d197c213e1ed428e6ff\",\n    \"code\": \"DEFAULT\",\n    \"name\": \"Default\",\n    \"mode\": \"LIGHT\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6IiIsImlhdCI6MTU4NjQ2ODMxNywiZXhwIjoxNTg5MDYwMzE3LCJzdWIiOiI1ZThlNzRiODU5NjVkMTZlMzI4MTMzNmQifQ.PPZIZvVT07_N98HOgq_ujNVJAq1q88pj-qOm95fXwrk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ítalo Sousa\",\n\t\"email\": \"italusousa@gmail.com\",\n\t\"password\": \"StrongP4ss!\",\n\t\"roles\": [\"admin\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6IiIsImlhdCI6MTU4NjQ2ODMxNywiZXhwIjoxNTg5MDYwMzE3LCJzdWIiOiI1ZThlNzRiODU5NjVkMTZlMzI4MTMzNmQifQ.PPZIZvVT07_N98HOgq_ujNVJAq1q88pj-qOm95fXwrk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/5e8e7f57a9d942026b01e274",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"5e8e7f57a9d942026b01e274"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"italo.sousa@e.c\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/users/5e8e7f57a9d942026b01e274",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"5e8e7f57a9d942026b01e274"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/users/5e8e7f57a9d942026b01e274",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"users",
+								"5e8e7f57a9d942026b01e274"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "root",
+			"item": [
+				{
+					"name": "publicPage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/p/italo3",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"p",
+								"italo3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "publicPage",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/p/italo3",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"p",
+										"italo3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "858"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35a-YpFdVXyOIehloEd9ITW2xVVppmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jul 2020 12:49:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"5f0514f7e6ede162e806064b\",\n    \"links\": [\n        {\n            \"_id\": \"5f05171df93b1364cc158d35\",\n            \"subtitle\": \"meu link\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkA\",\n            \"url\": \"https://google.com\"\n        },\n        {\n            \"_id\": \"5f0517e61924b5671e3ade97\",\n            \"subtitle\": \"meu link\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkC\",\n            \"url\": \"https://google.com\"\n        },\n        {\n            \"_id\": \"5f051906f65701699ced6142\",\n            \"subtitle\": \"meu link\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkD\",\n            \"url\": \"https://google.com\"\n        },\n        {\n            \"_id\": \"5f051930f65701699ced6143\",\n            \"subtitle\": \"meu link\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkE\",\n            \"url\": \"https://google.com\"\n        },\n        {\n            \"_id\": \"5f05195e632ad66a3300bbac\",\n            \"subtitle\": \"meu link\",\n            \"type\": \"SIMPLE\",\n            \"active\": true,\n            \"title\": \"LinkF\",\n            \"url\": \"https://google.com\"\n        }\n    ],\n    \"name\": \"italo3\",\n    \"title\": \"Pagina Italo 3\",\n    \"theme\": {\n        \"_id\": \"5efe1d197c213e1ed428e6ff\",\n        \"code\": \"DEFAULT\",\n        \"name\": \"Default\",\n        \"colors\": [\n            \"#EECDA3\",\n            \"#EF629F\"\n        ],\n        \"mode\": \"LIGHT\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "uploadImage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/isa/Pictures/wolfgang-hasselmann-eew2Sz9U5WY-unsplash.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/image",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"image"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "6b9a3012-2272-48a8-b3db-c799b0e826f8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e2c09376-b7f0-439e-93dd-78c27772715c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "8807bc42-451b-4b50-9a46-084c3061e2b6",
+			"key": "BASE_URL",
+			"value": "http://localhost:5000"
+		},
+		{
+			"id": "d9e2fd8d-9c90-477c-960c-defa15b66dae",
+			"key": "TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6InByb2ZpbGUsYWRtaW4iLCJzaWQiOiI1ZjE1N2FiN2EwMGI2NjNjNTMxNzg0NjgiLCJpYXQiOjE1OTUyNDMxOTEsImV4cCI6MTU5NzgzNTE5MSwic3ViIjoiNWYxMGVmMWY1YzI1ODAxNmZhNWYxNGFhIn0.JghbWVPF36QN8mrtisx9XZHZKcpwLi-olifua-Ui7FI"
+		},
+		{
+			"id": "6da9a660-937f-4cd2-abef-8bb5f02ac7a3",
+			"key": "BASE_URL",
+			"value": "https://linkez-api.herokuapp.com",
+			"disabled": true
+		},
+		{
+			"id": "87b58d37-b5da-4972-99b7-ac91179af4e4",
+			"key": "BASE_URL",
+			"value": "https://linkez-api-dev.herokuapp.com",
+			"disabled": true
+		}
+	],
+	"protocolProfileBehavior": {}
+}

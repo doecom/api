@@ -1,0 +1,62 @@
+{
+  "default": {
+    "title": "Welcome {{name}}",
+    "preheader": "",
+    "presentation": "Hello <b>{{name}}</b>,",
+    "preButtonPars": [
+      "Thank you for signing up. Please verify your email address by clicking the following link:"
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verify Account",
+    "postButtonPars": [
+      "If you did not make this request, please contact us by replying to this mail."
+    ],
+    "thanks": "Thanks!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- All rights reserved."
+  },
+  "pt-BR": {
+    "title": "Bem vindo {{name}}",
+    "preheader": "",
+    "presentation": "Olá, <b>{{name}}</b>!",
+    "preButtonPars": [
+      "Obrigado por inscrever-se no Doecom. Verifique seu endereço de e-mail clicando no link a seguir:"
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verificar Conta",
+    "postButtonPars": [
+      "Se você não fez essa solicitação, entre em contato conosco respondendo a este e-mail."
+    ],
+    "thanks": "Obrigado!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- Todos os direitos reservados."
+  },
+  "en-US": {
+    "title": "Welcome {{name}}",
+    "preheader": "",
+    "presentation": "Hello <b>{{name}}</b>,",
+    "preButtonPars": [
+      "Thank you for signing up. Please verify your email address by clicking the following link:"
+    ],
+    "showButton": true,
+    "buttonUrl": "{{buttonUrl}}",
+    "buttonText": "Verify Account",
+    "postButtonPars": [
+      "If you did not make this request, please contact us by replying to this mail."
+    ],
+    "thanks": "Thanks!",
+    "footerLine": "Doecom - BR",
+    "poweredByPre": "© {{year}}",
+    "poweredByUrl": "{{poweredByUrl}}",
+    "poweredBy": "Doecom",
+    "poweredByPost": "- All rights reserved."
+  }
+}
